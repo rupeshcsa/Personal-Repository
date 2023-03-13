@@ -1,0 +1,14 @@
+<template>
+    <lightning-card
+        title="Contacts Count"
+        icon-name="standard:contact_list">
+        <template if:true={account.data}>
+            <div class="slds-m-around_medium">
+                 <p>
+                    <!--This code will fetch the number of contact from the custom field  --> 
+                    <lightning-formatted-number  value={getCount}></lightning-formatted-number>
+                </p>
+            </div>
+        </template>
+    </lightning-card>
+</template>

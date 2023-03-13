@@ -1,0 +1,15 @@
+<template>
+    <select class="slds-select" onchange={handleGetSelectedValue}>
+        <option value="Select">Select from the list</option>
+            <template for:each={record} for:item="option">
+                <option key={option.key} value={option.key}>
+                    {option.Name}
+                </option>
+            </template>
+    </select>
+   <!--<lightning-button label="Get Fields Info" variant="brand" onclick={getFieldsDetailsOfObject}> </lightning-button>
+
+    <lightning-datatable data={details} hide-checkbox-column columns={columns} key-field="Id">
+    </lightning-datatable>-->
+ 
+</template>
